@@ -1,4 +1,3 @@
-# BudgetTracker
 Unit 6: Group Milestone 1
 ===
 
