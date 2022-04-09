@@ -7,6 +7,7 @@ Unit 6: Group Milestone 1
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -65,3 +66,60 @@ Optional:
 
 ## Wireframes
 <img src="https://imgur.com/043JHYt.jpg" width=800><br>
+
+## Schema
+**Models**
+
+**Transaction**
+
+| Properties (json key)  | Type            | Description |
+| :--------------------- |:--------------- | :---------- |
+| objectId               | Number          | Unique identifier for transaction |
+| transactionName        | String          | Name of transaction2 |
+| isIncome               | Boolean         | Is income or not (expense) |
+| transactionCost        | Number          | Total amount of a transaction |
+| createdAt              | DateTime        | Date when transaction was made. |
+| user                   | Number          | Identifier of the user |
+| itemCount              | Number          | Number of items purchased (if applicable) |
+| category               | Number          | categoryId from Category Model |
+| isEssential            | Boolean         | Is essential or not (nonessential) |
+| receipt                | File            | Scanned image of the receipt |
+
+**Category**
+
+| Properties (json key)  | Type            | Description |
+| :--------------------- |:--------------- | :---------- |
+| categoryId             | Number          | Unique identifier for category |
+
+**User**
+
+| Properties (json key)  | Type            | Description |
+| :--------------------- |:--------------- | :---------- |
+| userId                 | Number          | Unique identifier for user |
+| username               | String          | Username |
+| password               | String          | Password |
+| createdAt              | DateTime        | Date when account was created |
+| avatar                 | File            | Avatar of user |
+| balance                | Number          | Current balance in user’s account |
+| totExp                 | Number          | Total spending of user |
+| totInc                 | Number          | Total income of user |
+
+**Networking**
+
+**List of network requests by screen**
+
+* Log In/Sign Up Screen
+   * (Read/GET) Query logged in user object
+   * (Create/POST) Create new user object
+* Summary Screen
+   * (Read/GET) Query user’s transaction history
+   * (Update/PUT) Modify a transaction
+* Scan Screen
+   * (Create/POST) Create a new Transaction object (with receipt field not null)
+* Insert Screen
+   * (Create/POST) Create a new Transaction object
+   * (Update/PUT) Modify User’s totExp/totInc and balance
+* Profile Screen
+   * (Read/GET) Display user’s name
+   * (Read/GET) Display user’s balance, totInc and totExp
+   * (Read/GET) Display user’s spending summary visualization
