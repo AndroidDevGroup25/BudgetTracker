@@ -68,7 +68,7 @@ Optional:
 <img src="https://imgur.com/043JHYt.jpg" width=800><br>
 
 ## Schema
-**Models**
+### Models
 
 **Transaction**
 
@@ -104,7 +104,7 @@ Optional:
 | totExp                 | Number          | Total spending of user |
 | totInc                 | Number          | Total income of user |
 
-**Networking**
+### Networking
 
 **List of network requests by screen**
 
