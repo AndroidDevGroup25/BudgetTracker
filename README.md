@@ -15,7 +15,7 @@ Tracks how much users spend on a weekly or monthly basis and what categories the
 
 ### App Evaluation
 - **Category:** Personal Finance
-- **Mobile:** This app would be primarily developed for mobile. The mobile experience is unique because it would be more convenient for users to track their spending every time they receive income or spend money usign their mobile phones.
+- **Mobile:** This app would be primarily developed for mobile. The mobile experience is unique because it would be more convenient for users to track their spending every time they receive income or spend money using their mobile phones.
 - **Story:** Tracks and analyzes users' spending habit, and helps them monitor their spending habit by presenting a visualization of how much of their spending goes to non-essentials versus essentials.
 - **Market:** Any individual could choose to use this app, but the app is targeted specifically to college students.
 - **Habit:** This app could be used as often or unoften as the user want, depending on when they want to insert their spending/income - either immediately at the time a transaction takes place or later) and the frequency transactions take place.
