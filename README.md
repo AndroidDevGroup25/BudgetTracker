@@ -65,7 +65,7 @@ Optional:
 * Profile -> Text field to be modified. 
 
 ## Wireframes
-<img src="https://imgur.com/043JHYt.jpg" width=800><br>
+<img src="https://imgur.com/vuJjUPg.jpg" width=800><br>
 
 ## Schema
 ### Models
