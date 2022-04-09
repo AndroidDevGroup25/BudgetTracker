@@ -26,6 +26,7 @@ Tracks how much users spend on a weekly or monthly basis and what categories the
 
 **Required Must-have Stories**
 
+* Users can login to their accounts or sign up
 * Users can enter their expenses 
 * Users can track their expenses 
 * Users can see a visualization that analyzes how they’re spending money
