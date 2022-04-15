@@ -1,6 +1,7 @@
 package com.example.budgettracker
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import com.example.budgettracker.fragments.InsertFragment
 import com.example.budgettracker.fragments.ScanFragment
 import com.example.budgettracker.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.parse.ParseObject
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
