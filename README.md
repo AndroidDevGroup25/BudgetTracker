@@ -79,7 +79,7 @@ Optional:
 | Properties (json key)  | Type            | Description |
 | :--------------------- |:--------------- | :---------- |
 | objectId               | String          | User identifier for transaction |
-| transactionName        | String          | Name of transaction2 |
+| transactionName        | String          | Name of transaction |
 | isIncome               | Boolean         | Is income or not (expense) |
 | transactionCost        | Number          | Total amount of a transaction |
 | createdAt              | DateTime        | Date when transaction was made. |
@@ -93,7 +93,8 @@ Optional:
 
 | Properties (json key)  | Type            | Description |
 | :--------------------- |:--------------- | :---------- |
-| categoryId             | Number          | Unique identifier for category |
+| id                     | Number          | Unique identifier for category |
+| name                   | String          | Name of category
 
 **User**
 
