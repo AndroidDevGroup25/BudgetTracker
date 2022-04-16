@@ -26,17 +26,17 @@ Tracks how much users spend on a weekly or monthly basis and what categories the
 
 **Required Must-have Stories**
 
-* Users can login to their accounts or sign up
-* Users can enter their expenses 
-* Users can track their expenses 
-* Users can see a visualization that analyzes how they’re spending money
-* Users can categorize their expenses into essential/non-essential and other categories. i.e. Decide which is essential and which isn’t.
+- [x] Users can login to their accounts or sign up
+- [ ] Users can enter their expenses 
+- [ ] Users can track their expenses 
+- [ ] Users can see a visualization that analyzes how they’re spending money
+- [ ] Users can categorize their expenses into essential/non-essential and other categories. i.e. Decide which is essential and which isn’t.
 
 **Optional Nice-to-have Stories**
 
-* Users can take a picture with their camera or upload a picture from their phone.
-* The picture of the receipt can be scanned using the ocr api.
-* The expenses extracted from the photo can be tracked and analyzed.
+- [ ] Users can take a picture with their camera or upload a picture from their phone.
+- [ ] The picture of the receipt can be scanned using the ocr api.
+- [ ] The expenses extracted from the photo can be tracked and analyzed.
 
 ### 2. Screen Archetypes
 
