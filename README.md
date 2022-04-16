@@ -79,15 +79,15 @@ Optional:
 | Properties (json key)  | Type            | Description |
 | :--------------------- |:--------------- | :---------- |
 | objectId               | String          | User identifier for transaction |
-| transactionName        | String          | Name of transaction |
+| name                   | String          | Name of transaction |
 | isIncome               | Boolean         | Is income or not (expense) |
-| transactionCost        | Number          | Total amount of a transaction |
-| createdAt              | DateTime        | Date when transaction was made. |
+| cost                   | Number          | Total amount of a transaction |
+| date                   | Date            | Date when transaction was made. |
 | user                   | Number          | Identifier of the user |
-| itemCount              | Number          | Number of items purchased (if applicable) |
+| itemCount              | Number          | Number of items purchased (optional) |
 | category               | Number          | categoryId from Category Model |
 | isEssential            | Boolean         | Is essential or not (nonessential) |
-| receipt                | File            | Scanned image of the receipt |
+| receipt                | File            | Scanned image of the receipt (optional) |
 
 **Category**
 
@@ -103,8 +103,8 @@ Optional:
 | objectId               | String          | Unique identifier for user |
 | username               | String          | Username |
 | password               | String          | Password |
-| createdAt              | DateTime        | Date when account was created |
-| avatar                 | File            | Avatar of user |
+| createdAt              | Date            | Date when account was created |
+| avatar                 | File            | Avatar of user (optional)|
 | balance                | Number          | Current balance in user’s account |
 | totExp                 | Number          | Total spending of user |
 | totInc                 | Number          | Total income of user |
