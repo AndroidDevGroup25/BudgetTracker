@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">BudgetTracker</string>
+    <string name="amount_hint">Amount</string>
+    <string name="description_hint">Description</string>
+    <string name="date_hint">Date</string>
+    <string name="essential">Essential</string>
+    <string name="non_essential">Non-essential</string>
+    <string name="submit">Submit</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.budgettracker.R
 import com.parse.FindCallback
 import com.parse.ParseQuery
+import depauw.datle.instagramy.Transaction
 
 open class SummaryFragment : Fragment() {
 
