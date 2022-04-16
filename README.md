@@ -78,7 +78,7 @@ Optional:
 
 | Properties (json key)  | Type            | Description |
 | :--------------------- |:--------------- | :---------- |
-| objectId               | Number          | Unique identifier for transaction |
+| objectId               | String          | User identifier for transaction |
 | transactionName        | String          | Name of transaction2 |
 | isIncome               | Boolean         | Is income or not (expense) |
 | transactionCost        | Number          | Total amount of a transaction |
@@ -99,7 +99,7 @@ Optional:
 
 | Properties (json key)  | Type            | Description |
 | :--------------------- |:--------------- | :---------- |
-| userId                 | Number          | Unique identifier for user |
+| objectId               | String          | Unique identifier for user |
 | username               | String          | Username |
 | password               | String          | Password |
 | createdAt              | DateTime        | Date when account was created |
