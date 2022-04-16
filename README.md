@@ -83,7 +83,7 @@ Optional:
 | isIncome               | Boolean         | Is income or not (expense) |
 | cost                   | Number          | Total amount of a transaction |
 | date                   | Date            | Date when transaction was made. |
-| user                   | Number          | Identifier of the user |
+| user                   | Pointer (User)  | Identifier of the user |
 | itemCount              | Number          | Number of items purchased (optional) |
 | category               | Number          | categoryId from Category Model |
 | isEssential            | Boolean         | Is essential or not (nonessential) |
