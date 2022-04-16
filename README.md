@@ -1,5 +1,8 @@
-Unit 6: Group Milestone 1
+Unit 6: Group Milestone 2
 ===
+## Progress
+<img src="https://drive.google.com/file/d/1YWh-o4_CL3RqVJq_HdydSwywzcCz5QnK/view?usp=sharing" width=800><br>
+
 
 # Budget Tracker
 
