@@ -1,12 +1,11 @@
-package depauw.datle.instagramy
+package com.example.budgettracker
 
 import com.parse.ParseClassName
-import com.parse.ParseFile
 import com.parse.ParseObject
 import com.parse.ParseUser
 import java.util.*
 
-@ParseClassName("Post")
+@ParseClassName("Transaction")
 class Transaction: ParseObject() {
     fun getDescription(): String? {
         return getString(KEY_DESCRIPTION)
@@ -14,11 +13,11 @@ class Transaction: ParseObject() {
     fun setDescription(description: String) {
         put(KEY_DESCRIPTION, description)
     }
-    fun getTransactionCost(): Int {
-        return getInt(KEY_TRANSACTION_COST)
+    fun getCost(): Int {
+        return getInt(KEY_COST)
     }
-    fun setTransactionCost(cost : Int) {
-        put(KEY_TRANSACTION_COST, cost)
+    fun setCost(cost : Double) {
+        put(KEY_COST, cost)
     }
     fun getUser(): ParseUser? {
         return getParseUser(KEY_USER)
@@ -32,11 +31,47 @@ class Transaction: ParseObject() {
     fun setDate(date : Date) {
         put(KEY_DATE, date)
     }
+    fun isIncome(): Boolean {
+        return getBoolean(KEY_IS_INCOME)
+    }
+    fun setIsIncome(isIncome: Boolean) {
+        put(KEY_IS_INCOME, isIncome)
+    }
+    fun getItemCount(): Int {
+        return getInt(KEY_ITEM_COUNT)
+    }
+    fun setItemCount(itemCount: Int) {
+        put(KEY_ITEM_COUNT, itemCount)
+    }
+    fun isEssential(): Boolean {
+        return getBoolean(KEY_IS_ESSENTIAL)
+    }
+    fun setIsEssential(isIncome: Boolean) {
+        put(KEY_IS_ESSENTIAL, isIncome)
+    }
+    fun getCategory(): Int {
+        return getInt(KEY_CATEGORY)
+    }
+    fun setCategory(category: Int) {
+        put(KEY_CATEGORY, category)
+    }
+
+    fun setName(name: String) {
+        put(KEY_NAME, name)
+    }
+    fun getName(): String? {
+        return getString(KEY_NAME)
+    }
 
     companion object {
-        val KEY_DESCRIPTION = "description"
-        val KEY_USER = "user"
-        val KEY_DATE = "createdAt"
-        val KEY_TRANSACTION_COST = "transactionCost"
+        const val KEY_DESCRIPTION = "description"
+        const val KEY_USER = "user"
+        const val KEY_DATE = "date"
+        const val KEY_COST = "cost"
+        const val KEY_IS_INCOME = "isIncome"
+        const val KEY_ITEM_COUNT = "itemCount"
+        const val KEY_IS_ESSENTIAL ="isEssential"
+        const val KEY_CATEGORY = "category"
+        const val KEY_NAME = "name"
     }
 }
