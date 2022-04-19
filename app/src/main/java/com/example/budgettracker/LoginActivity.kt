@@ -65,6 +65,7 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 e.printStackTrace()
                 Toast.makeText(this, "Error logging in", Toast.LENGTH_SHORT).show()
+                Log.i(TAG, e.toString())
             }})
         )
     }
