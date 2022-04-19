@@ -35,9 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:editable="false"
         android:ems="10"
         android:hint="@string/date_hint"
-        android:inputType="date"
+        android:inputType="none"
         app:layout_constraintStart_toStartOf="@+id/editText_description"
         app:layout_constraintTop_toBottomOf="@+id/editText_description" />
 
@@ -56,7 +57,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="-27dp"
         android:layout_marginTop="20dp"
-        android:checkedButton="@id/radioButton_essential"
         app:layout_constraintStart_toStartOf="@+id/editText_date"
         app:layout_constraintTop_toBottomOf="@+id/editText_date">
 
@@ -97,7 +97,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="-30dp"
-        android:checkedButton="@id/radioButton_income"
         app:layout_constraintEnd_toEndOf="@+id/editText_date"
         app:layout_constraintTop_toTopOf="@+id/radioGroup_essential_type">
 
@@ -113,5 +112,18 @@
             android:layout_height="wrap_content"
             android:text="@string/non_income" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_amount"
+        app:layout_constraintEnd_toEndOf="@+id/editText_amount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

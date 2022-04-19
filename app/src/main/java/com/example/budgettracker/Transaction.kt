@@ -3,7 +3,7 @@ package com.example.budgettracker
 import com.parse.ParseClassName
 import com.parse.ParseObject
 import com.parse.ParseUser
-import java.util.*
+import java.util.Date
 
 @ParseClassName("Transaction")
 class Transaction: ParseObject() {
@@ -71,7 +71,7 @@ class Transaction: ParseObject() {
         const val KEY_IS_INCOME = "isIncome"
         const val KEY_ITEM_COUNT = "itemCount"
         const val KEY_IS_ESSENTIAL ="isEssential"
-        const val KEY_CATEGORY = "category"
+        const val KEY_CATEGORY = "category_id"
         const val KEY_NAME = "name"
     }
 }
