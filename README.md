@@ -81,13 +81,13 @@ Optional:
 | objectId               | String          | User identifier for transaction |
 | name                   | String          | Name of transaction |
 | isIncome               | Boolean         | Is income or not (expense) |
-| cost                   | Number          | Total amount of a transaction |
+| cost                   | Number          | Total amount of a transaction (must have) |
 | date                   | Date            | Date when transaction was made. |
-| user                   | Pointer (User)  | Identifier of the user |
-| itemCount              | Number          | Number of items purchased (optional) |
+| user                   | Pointer (User)  | Identifier of the user (must have) |
+| itemCount              | Number          | Number of items purchased |
 | category               | Number          | categoryId from Category Model |
 | isEssential            | Boolean         | Is essential or not (nonessential) |
-| receipt                | File            | Scanned image of the receipt (optional) |
+| receipt                | File            | Scanned image of the receipt |
 
 **Category**
 
