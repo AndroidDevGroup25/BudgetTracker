@@ -30,10 +30,10 @@ Tracks how much users spend on a weekly or monthly basis and what categories the
 **Required Must-have Stories**
 
 - [x] Users can login to their accounts or sign up
-- [ ] Users can enter their expenses 
+- [x] Users can enter their expenses 
 - [ ] Users can track their expenses 
 - [ ] Users can see a visualization that analyzes how they’re spending money
-- [ ] Users can categorize their expenses into essential/non-essential and other categories. i.e. Decide which is essential and which isn’t.
+- [x] Users can categorize their expenses into essential/non-essential and other categories. i.e. Decide which is essential and which isn’t.
 
 **Optional Nice-to-have Stories**
 
