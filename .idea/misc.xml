@@ -6,6 +6,12 @@
         <entry key="..\:/Projects/BudgetTracker/app/src/main/res/layout/fragment_insert.xml" value="0.20416666666666666" />
         <entry key="..\:/Projects/BudgetTracker/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Projects/BudgetTracker/app/src/main/res/layout/item_transaction.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15726928710937502" />
+        <entry key="app/src/main/res/layout/fragment_insert.xml" value="0.18791508329087403" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.28030090332031254" />
+        <entry key="app/src/main/res/layout/fragment_summary.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/item_transaction.xml" value="0.2648895705955616" />
       </map>
     </option>
   </component>
