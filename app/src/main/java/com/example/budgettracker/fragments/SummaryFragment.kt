@@ -36,11 +36,10 @@ open class SummaryFragment : Fragment() {
                     tvCost = itemView.findViewById((R.id.tvCost))
                 }
                 fun bind(transaction: Transaction){
-
                     //todo should we include usernames in the adapter?
                     tvTransactionName.text = transaction.getDescription()
-                    //TODO
-                    //tvCost.text = transaction.getCost().toString()
+                    //TODO The date format should be simple. Change to mm/dd/yy
+                    tvCost.text = transaction.getCost().toString()
                     tvCreatedAt.text = transaction.getDate().toString()
                 }
             }
@@ -50,10 +49,9 @@ open class SummaryFragment : Fragment() {
             return ViewHolder(view)
         }
 
-        //TODO COMPLETE THIS METHOD
         override fun onBindViewHolder(holder: TransactionAdapter.ViewHolder, position: Int) {
-            val post = transactions.get(position)
-           // holder.bind(transaction)
+            val transaction = transactions.get(position)
+            holder.bind(transaction)
         }
 
         override fun getItemCount(): Int {
@@ -83,13 +81,11 @@ open class SummaryFragment : Fragment() {
         queryTransactions()
     }
 
-    //MAKING QUERIES FOR POSTS IN THE SERVER todo
+    //MAKING QUERIES FOR TRANSACTIONS IN THE SERVER
     open fun queryTransactions() {
         val query: ParseQuery<Transaction> = ParseQuery.getQuery(Transaction::class.java)
         query.include(Transaction.KEY_USER)
         query.addDescendingOrder("createdAt")
-
-
 
         query.findInBackground(object: FindCallback<Transaction> {
             override fun done(transactions: MutableList<Transaction>?, e: com.parse.ParseException?) {
