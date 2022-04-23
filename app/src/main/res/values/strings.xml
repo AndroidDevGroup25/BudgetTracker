@@ -2,7 +2,7 @@
     <string name="app_name">BudgetTracker</string>
     <string name="amount_hint">Amount</string>
     <string name="description_hint">Description</string>
-    <string name="date_hint">Date</string>
+    <string name="date_hint">Date (mm-dd-yyyy)</string>
     <string name="essential">Essential</string>
     <string name="non_essential">Non-essential</string>
     <string name="submit">Submit</string>
@@ -13,5 +13,7 @@
 
     <string name="back4app_app_id">CynpZTN2rPwcGTRFzRr7fktS6T5mH7UtB0zdEt7c</string>
     <string name="back4app_client_key">y9ijzBWriOoiG9Rf48qk2mzitz765Up9gNRXAIud</string>
+    <string name="income">Income</string>
+    <string name="non_income">Non-income</string>
 
 </resources>

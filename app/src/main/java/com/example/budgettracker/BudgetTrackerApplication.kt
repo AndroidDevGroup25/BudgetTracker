@@ -1,12 +1,14 @@
 package com.example.budgettracker
 
 import android.app.Application
-import com.example.budgettracker.R
-import com.parse.Parse;
+import com.parse.Parse
+import com.parse.ParseObject
+
 
 class BudgetTrackerApplication : Application() {
     override fun onCreate() {
         super.onCreate()
+        ParseObject.registerSubclass(Transaction::class.java)
         Parse.initialize(
             Parse.Configuration.Builder(this)
                 .applicationId(getString(R.string.back4app_app_id))

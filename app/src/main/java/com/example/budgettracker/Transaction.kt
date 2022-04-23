@@ -1,10 +1,9 @@
-package com.example.budgettracker
+package depauw.datle.instagramy
 
 import com.parse.ParseClassName
 import com.parse.ParseFile
 import com.parse.ParseObject
 import com.parse.ParseUser
-import java.io.File
 import java.util.*
 
 @ParseClassName("Post")

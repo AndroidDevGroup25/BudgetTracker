@@ -1,5 +1,6 @@
 package com.example.budgettracker.fragments
 
+import TransactionAdapter
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -23,45 +24,6 @@ open class SummaryFragment : Fragment() {
 
     var allTransactions: MutableList<Transaction> = mutableListOf()
 
-    /*BEGINNING OF ADAPTER CLASS*/
-    class TransactionAdapter(val context: Context, val transactions: MutableList<Transaction>): RecyclerView.Adapter<TransactionAdapter.ViewHolder>(){
-            class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-                val tvTransactionName: TextView
-                val tvCreatedAt: TextView
-                val tvCost : TextView
-
-                init {
-                    tvTransactionName = itemView.findViewById(R.id.tvTransactionName)
-                    tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt)
-                    tvCost = itemView.findViewById((R.id.tvCost))
-                }
-                fun bind(transaction: Transaction){
-
-                    //todo should we include usernames in the adapter?
-                    tvTransactionName.text = transaction.getDescription()
-                    //TODO
-                    //tvCost.text = transaction.getCost().toString()
-                    tvCreatedAt.text = transaction.getDate().toString()
-                }
-            }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionAdapter.ViewHolder {
-            val view = LayoutInflater.from(context).inflate(R.layout.item_transaction, parent,false)
-            return ViewHolder(view)
-        }
-
-        //TODO COMPLETE THIS METHOD
-        override fun onBindViewHolder(holder: TransactionAdapter.ViewHolder, position: Int) {
-            val post = transactions.get(position)
-           // holder.bind(transaction)
-        }
-
-        override fun getItemCount(): Int {
-            return transactions.size
-        }
-    }
-    /*END OF ADAPTER CLASS*/
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -83,13 +45,11 @@ open class SummaryFragment : Fragment() {
         queryTransactions()
     }
 
-    //MAKING QUERIES FOR POSTS IN THE SERVER todo
+    //MAKING QUERIES FOR TRANSACTIONS IN THE SERVER
     open fun queryTransactions() {
         val query: ParseQuery<Transaction> = ParseQuery.getQuery(Transaction::class.java)
         query.include(Transaction.KEY_USER)
         query.addDescendingOrder("createdAt")
-
-
 
         query.findInBackground(object: FindCallback<Transaction> {
             override fun done(transactions: MutableList<Transaction>?, e: com.parse.ParseException?) {
