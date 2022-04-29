@@ -1,8 +1,10 @@
 package com.example.budgettracker
 
 import com.parse.ParseClassName
+import com.parse.ParseFile
 import com.parse.ParseObject
 import com.parse.ParseUser
+import java.io.File
 import java.util.Date
 
 @ParseClassName("Transaction")
@@ -62,7 +64,12 @@ class Transaction: ParseObject() {
     fun getName(): String? {
         return getString(KEY_NAME)
     }
-
+    fun getReceipt(): ParseFile? {
+        return getParseFile(KEY_RECEIPT)
+    }
+    fun setReceipt(receipt: ParseFile) {
+        put(KEY_RECEIPT, receipt)
+    }
     companion object {
         const val KEY_DESCRIPTION = "description"
         const val KEY_USER = "user"
@@ -73,5 +80,6 @@ class Transaction: ParseObject() {
         const val KEY_IS_ESSENTIAL ="isEssential"
         const val KEY_CATEGORY = "category_id"
         const val KEY_NAME = "name"
+        const val KEY_RECEIPT = "receipt"
     }
 }

@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.action_scan -> {
                     // Navigate to the Profile Screen
-                    fragmentToShow = ScanFragment()
+                    fragmentToShow = ScanFragment(bottom_navigation)
                     Toast.makeText(this, "Scan", Toast.LENGTH_SHORT).show()
                 }
 
@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Set default selection
-        findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_summary
+        bottom_navigation.selectedItemId = R.id.action_summary
+    }
+
+    fun getBottomNavigation() : BottomNavigationView {
+        return bottom_navigation
     }
 }

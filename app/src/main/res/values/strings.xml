@@ -15,5 +15,6 @@
     <string name="back4app_client_key">y9ijzBWriOoiG9Rf48qk2mzitz765Up9gNRXAIud</string>
     <string name="income">Income</string>
     <string name="non_income">Non-income</string>
+    <string name="click_here_to_scan">Click here to Scan</string>
 
 </resources>
