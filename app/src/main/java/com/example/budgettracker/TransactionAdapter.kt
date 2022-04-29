@@ -30,7 +30,7 @@ class TransactionAdapter(val context: Context, val transactions: MutableList<Tra
             tvTransactionName.text = transaction.getDescription()
             //TODO The date format should be simple. Change to mm/dd/yy
             tvCost.text = transaction.getCost().toString()
-            tvCreatedAt.text = transaction.getDate().toString()
+            tvCreatedAt.text = transaction.getDate().toString().substring(0,11)
         }
 
         override fun onClick(p0: View?) {
@@ -60,4 +60,3 @@ class TransactionAdapter(val context: Context, val transactions: MutableList<Tra
         return transactions.size
     }
 }
-/*END OF ADAPTER CLASS*/
